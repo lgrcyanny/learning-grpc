@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.cyanny.learning.grpc.hellodemo";
+option java_outer_classname = "HelloDemoProto";
+
+package hellodemo;
+
+// The greeting service definition.
+service PingPong {
+    // Sends a greeting
+    rpc ping (PingRequest) returns (PongResponse) {}
+}
+
+// The request message containing the user's name.
+message PingRequest {
+    string message = 1;
+}
+
+// The response message containing the greetings
+message PongResponse {
+    string message = 1;
+}
