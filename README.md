@@ -1,7 +1,8 @@
 # Introduction
 
-A simple grpc demo in scala
-I came across some issues when build this simple demo and solved it, so I want to share this demo.
+A simple grpc demo in scala.
+
+I came across some issues when build this simple demo and solved them, and I want to share this demo.
 
 + grpc version: 1.16.1 [grpc-java](https://github.com/grpc/grpc-java)
 + protobuf version: 3.5.1
@@ -10,27 +11,31 @@ I came across some issues when build this simple demo and solved it, so I want t
 
 # Usage
 
-1. compile
+**1. compile**
 
 ```
 mvn clean package -DskipTests
 ```
 
-2. starting server
+**2. start server**
 
 ```
 java -cp target/learning-grpc-1.0-SNAPSHOT.jar com.cyanny.learning.grpc.HelloServer
 ```
 you will get output:
-Server started, listening on 8088
 
-3. starting client
+```
+Server started, listening on 8088
+```
+
+**3. start client**
 
 ```
 java -cp target/learning-grpc-1.0-SNAPSHOT.jar com.cyanny.learning.grpc.HelloClient
 ```
 
 you will get output like this:
+```
 Got response: message: "Got message: ping: 1"
 , time taken: 498ms
 Got response: message: "Got message: ping: 2"
@@ -41,3 +46,4 @@ Got response: message: "Got message: ping: 9999"
 Got response: message: "Got message: ping: 10000"
 , time taken: 1ms
 done time taken: 5719ms
+```
