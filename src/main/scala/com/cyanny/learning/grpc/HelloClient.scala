@@ -1,3 +1,8 @@
+/*
+ * Copyright (C) 2018 The lgrcyanny, Inc. All Rights Reserved.
+ * Authors: liangguorong@gmail.com
+ * Description: grpc HelloClient
+ */
 package com.cyanny.learning.grpc
 
 import java.util.concurrent.TimeUnit
